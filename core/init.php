@@ -1,6 +1,6 @@
 <?php
 $error='failed to connect';
-    $db =mysqli_connect('localhost','Slammad','Slammad42','farm') or die($error);
+    $db =mysqli_connect('us-cdbr-iron-east-02.cleardb.net','b60b766e48bd0d','18ce518b','heroku_a1c19a1fd58284d') or die($error);
     @define('BASEURL', $_SERVER['DOCUMENT_ROOT']);
 
     function substrwords($text, $maxchar, $end='...') {
