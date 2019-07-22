@@ -1,6 +1,6 @@
 <?php
 $error='failed to connect';
-$db =mysqli_connect('us-cdbr-iron-east-02.cleardb.net','b60b766e48bd0d','18ce518b','heroku_a1c19a1fd58284d') or die($error);
+$db =mysqli_connect('localhost','root','Ln4iA7XPD4F4','farm') or die($error);
 @define('BASEURL', $_SERVER['DOCUMENT_ROOT']);
 $query="SELECT * FROM settings WHERE `id`=1";
 $st=$db->query($query);
