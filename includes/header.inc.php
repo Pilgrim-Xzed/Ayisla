@@ -6,8 +6,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <?php
-
-include '../core/init.php';
+$error='failed to connect';
+$db =mysqli_connect('localhost','Slammad','Slammad42','farm') or die($error);
+@define('BASEURL', $_SERVER['DOCUMENT_ROOT']);
 $query="SELECT * FROM settings WHERE `id`=1";
 $st=$db->query($query);
 $show=mysqli_fetch_assoc($st)
@@ -16,7 +17,7 @@ $show=mysqli_fetch_assoc($st)
 <!DOCTYPE html>
 <html>
 <head>
-<title>TuherBiscuss</title>
+<title>Ayisla NG</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,7 +38,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
+<style>
+	section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f1f4fa;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
 
+.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+
+ p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1re}
+</style>
 <body>
 	<script>
 	  var boxheight = $('.carousel-inner').height();
@@ -99,7 +157,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
-						<h1><a class="navbar-brand" href="index.php"><span class="one">T</span>uher<span class="one">B</span>iscuss</a></h1>
+						<img src="assets/images/logo.png" style="height:100px;width:150px;border-radius:150px;" alt="">
+					
 					</div>
 				</div>
 
