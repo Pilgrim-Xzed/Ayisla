@@ -260,37 +260,56 @@ $id=$side1['id'];
 <section>
 <div class="container">
 
+<div class="row">
+        <div class="col-md-8">
+        
+                <form method="POST" action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" name="sender_name" placeholder="Enter name" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" name="sender_email" class="form-control" id="email" placeholder="Enter email" required="required"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Consultation</option>
+                        
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" name="sendMessage" class="btn btn-success pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+       
+        </div>
+        <div class="col-md-4">
 	
-		<div class="row mbr-justify-content-center">
-
-            <div class="col-lg-6 mbr-col-md-10">
                 <div class="wrap">
                     <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-volume-up fa"></span>
-                    </div>
-                    <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Stay <span>Successful</span></h2>
-                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
-                    <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-calendar fa"></span>
-                    </div>
-                    <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Create
-                            <span>An Effective Team</span>
-                        </h2>
-                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
-                    <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-globe fa"></span>
+                        <span class="mbr-iconfont fa-customercare fa"></span>
                     </div>
                     <div class="text-wrap vcenter">
                         <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Launch
@@ -299,27 +318,10 @@ $id=$side1['id'];
                         <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 mbr-col-md-10">
-                <div class="wrap">
-                    <div class="ico-wrap">
-                        <span class="mbr-iconfont fa-trophy fa"></span>
-                    </div>
-                    <div class="text-wrap vcenter">
-                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Achieve <span>Your Targets</span></h2>
-                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                    </div>
-                </div>
-            </div>
-
-            
-
             
         </div>
-
+    </div>
 </div>
 
 </section>
 
-
-  
