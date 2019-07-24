@@ -1,6 +1,6 @@
 <?php
 $error='failed to connect';
-   $db =mysqli_connect('localhost','Slammad','Slammad42','farm') or die($error);
+   $db =mysqli_connect('localhost','root','Ln4iA7XPD4F4','farm') or die($error);
 @define('BASEURL', $_SERVER['DOCUMENT_ROOT']);
 $query="SELECT * FROM settings WHERE `id`=1";
 $st=$db->query($query);
